@@ -1,0 +1,348 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(
+    to right,
+    #f1f2f3,
+    #54b2ff
+  ); /* Gradient background */
+  color: rebeccapurple;
+  padding: 10px 0;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content .logo {
+  width: 100px; /* Sesuaikan ukuran logo */
+  margin-right: 20px;
+}
+
+.header-content .header-text {
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Banner Section Styles */
+#banner {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px; /* Membatasi tinggi maksimum banner */
+}
+#banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 500px; /* Membatasi tinggi maksimum gambar dalam banner */
+  object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+/* Koleksi Terbaru Section Styles */
+#koleksi-terbaru {
+  padding: 20px 0;
+  background: #fff;
+}
+
+#koleksi-terbaru h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#koleksi-terbaru p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.produk-kategori {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.kategori {
+  flex-basis: 23%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kategori .kategori-container {
+  width: 100%; /* Mengisi seluruh lebar container */
+  height: 200px; /* Atur tinggi container sesuai kebutuhan */
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.kategori:hover {
+  transform: translateY(-5px); /* Efek hover untuk naik */
+}
+
+.kategori .kategori-container {
+  width: 100%; /* Mengisi seluruh lebar container */
+  height: 200px; /* Atur tinggi container sesuai kebutuhan */
+  overflow: hidden;
+  border-radius: 5px;
+}
+.kategori img {
+  width: 100%; /* Menyesuaikan gambar dengan lebar container */
+  height: auto;
+  object-fit: cover; /* Menjaga proporsi gambar */
+  transition: transform 0.3s ease-in-out;
+}
+
+.kategori:hover img {
+  transform: scale(1.1); /* Efek scaling saat hover */
+}
+
+.kategori h3 {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #555; /* Warna latar belakang saat dihover */
+  color: #fff; /* Warna teks saat dihover */
+}
+
+/* Kenapa Memilih Kami Section Styles */
+#kenapa-memilih-kami {
+  padding: 20px 0;
+  background: linear-gradient(
+    to right,
+    #f1f2f3,
+    #54b2ff
+  ); /* Gradient background */
+  color: rebeccapurple;
+  text-align: center;
+}
+
+#kenapa-memilih-kami ul {
+  list-style: none;
+  padding: 0;
+}
+
+#kenapa-memilih-kami li {
+  margin: 10px 0;
+}
+
+/* Testimoni Pelanggan Section Styles */
+#testimoni-pelanggan {
+  padding: 20px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.testimoni {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimoni blockquote {
+  flex-basis: 30%;
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rebeccapurple;
+}
+
+/* Bergabung dengan Komunitas Kami Section Styles */
+#bergabung-komunitas {
+  padding: 20px 0;
+  background: linear-gradient(
+    to right,
+    #f1f2f3,
+    #54b2ff
+  ); /* Gradient background */
+  color: rebeccapurple;
+  text-align: center;
+}
+
+#bergabung-komunitas form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bergabung-komunitas label {
+  margin: 10px 0 5px 0;
+}
+
+#bergabung-komunitas input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#bergabung-komunitas button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#bergabung-komunitas button:hover {
+  background: #555;
+}
+
+/* Hubungi Kami Section Styles */
+#hubungi-kami {
+  padding: 20px 0;
+  background: #fff;
+  text-align: center;
+}
+
+#hubungi-kami ul {
+  list-style: none;
+  padding: 0;
+}
+
+#hubungi-kami li {
+  margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(
+    to right,
+    #f1f2f3,
+    #54b2ff
+  ); /* Gradient background */
+  color: rebeccapurple;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media {
+  margin-top: 10px;
+}
+
+footer .social-media a {
+  margin: 0 5px;
+  color: rebeccapurple;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-content .logo {
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  #koleksi-terbaru .produk-kategori {
+    flex-direction: column;
+  }
+
+  .kategori {
+    flex-basis: 100%;
+  }
+
+  #kenapa-memilih-kami ul {
+    text-align: left;
+  }
+
+  .testimoni blockquote {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  #bergabung-komunitas form {
+    width: 100%;
+  }
+
+  #bergabung-komunitas input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
